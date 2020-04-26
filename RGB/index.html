@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" />
+  <title>RGB/HSL</title>
+</head>
+
+<body>
+
+  <h1>RGB</h1>
+
+  <form action="#">
+    <label id="rLabel"></label>
+    <input type="range" id="R" min="0" max="255">
+    <label id="gLabel"></label>
+    <input type="range" id="G" min="0" max="255">
+    <label id="bLabel"></label>
+    <input type="range" id="B" min="0" max="255">
+    <p>Elegir si HSL
+      <input type="checkbox" id="HSL">
+    </p>
+  </form>
+
+  <p id="value1"></p>
+  <p id="value2"></p>
+  <p id="value3"></p>
+  <p id="totalValue"></p>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

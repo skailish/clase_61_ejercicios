@@ -1,0 +1,23 @@
+body {
+  text-align: center;
+}
+
+form {
+    display: flex;
+    align-items: center;
+  flex-direction: column;
+}
+
+#contador {
+  font-size: xx-large;
+}
+
+.exceed {
+  color: red;
+}
+
+
+* {
+  text-transform: uppercase;
+  text-decoration: none ;
+}

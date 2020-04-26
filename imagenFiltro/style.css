@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+form {
+  margin: 50px;
+  background-color: rgba(245, 245, 220, 0.39);
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+span {
+  padding: 0 20px;
+}
+
+h2 {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+#url {
+  width: 100%;
+}
+
+img {
+  max-width: 100vw;
+}

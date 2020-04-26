@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" />
+  <title>FILTRANDO IMÁGENES</title>
+</head>
+
+<body>
+
+  <img src="" id="img">
+
+  <div class="container">
+    <form action="#">
+      <h2>Ingrese el URL de una imagen:</h2>
+      <input type="url"
+        value="https://www.lavanguardia.com/r/GODO/LV/p6/WebSite/2019/04/02/Recortada/img_mrius_20190402-141602_imagenes_lv_terceros_gato_nombre2-328-kLmH-U461425413181OZB-992x558@LaVanguardia-Web.jpg"
+        id="url">
+      <h2>Aplique los estilos:</h2>
+      <div class="container">
+        <select id="filters">
+          <option value="grayscale">Grayscale</option>
+          <option value="invert">Invert</option>
+          <option value="opacity">Opacity</option>
+          <option value="saturate">Saturate</option>
+          <option value="sepia">Sepia</option>
+        </select>
+        <span>0% </span>
+        <input type="range" min="0" max="100" id="range">
+        <span> 100%</span>
+      </div>
+      <p id="rangeValue"></p>
+    </form>
+  </div>
+
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>

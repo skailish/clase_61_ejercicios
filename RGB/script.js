@@ -55,12 +55,12 @@ const RGBToHSL = (r, g, b) =>
 const updateValues = () =>
 {
   const hsl = RGBToHSL(r.value, g.value, b.value);
-  const hslValue = `hsl(${hsl[0]}, ${hsl[1]}, ${hsl[2]})`;
+  const hslValue = `hsl(${hsl[0]}, ${hsl[1]}%, ${hsl[2]}%)`;
   const rgbValue = `rgb(${r.value}, ${g.value}, ${b.value})`
 
   const value1 = document.querySelector('#HSL').checked ? "H: " + hsl[0] : "R: " + document.querySelector('#R').value;
-  const value2 = document.querySelector('#HSL').checked ? "S: " + hsl[1] : "G: " + document.querySelector('#G').value;
-  const value3 = document.querySelector('#HSL').checked ? "L: " + hsl[2] : "B: " + document.querySelector('#B').value;
+  const value2 = document.querySelector('#HSL').checked ? "S: " + hsl[1] + "%" : "G: " + document.querySelector('#G').value;
+  const value3 = document.querySelector('#HSL').checked ? "L: " + hsl[2] + "%" : "B: " + document.querySelector('#B').value;
 
   document.querySelector('#value1').innerHTML = value1;
   document.querySelector('#value2').innerHTML = value2;
@@ -72,14 +72,10 @@ const updateValues = () =>
 
 const changeColor = () =>
 {
-
   const hsl = RGBToHSL(r.value, g.value, b.value);
-  const hslValue = `hsl(${hsl[0]}, ${hsl[1]}, ${hsl[2]})`;
-  console.log(hslValue);
+  const hslValue = `hsl(${hsl[0]}, ${hsl[1]}%, ${hsl[2]}%)`;
   const rgbValue = `rgb(${r.value}, ${g.value}, ${b.value})`
-
-  body.style.backgroundColor = rgbValue;
-  console.log(body.style.backgroundColor)
+  body.style.backgroundColor = document.querySelector('#HSL').checked ? hslValue : rgbValue;
   updateValues()
 }
 
@@ -94,6 +90,7 @@ const updateColor = () =>
 const init = () =>
 {
   updateColor()
+  changeColor()
   updateValues()
 }
 

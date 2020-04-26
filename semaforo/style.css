@@ -1,0 +1,32 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#semaforo {
+  border-radius: 20px;
+  padding: 20px;
+  background-color: black;
+}
+#red,
+#yellow,
+#green {
+  margin: 10px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+#red {
+  background-color: red;
+}
+#yellow {
+  background-color: yellow;
+}
+#green {
+  background-color: rgb(5, 223, 5);
+}
+
+.disabled {
+  opacity: 0.3;
+}
